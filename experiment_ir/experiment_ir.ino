@@ -1,0 +1,22 @@
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(12,INPUT);
+pinMode (13, OUTPUT);
+Serial.begin(9600);
+}
+
+void loop() {
+  if(digitalRead(12)==HIGH)
+  {
+  digitalWrite(13,HIGH);
+  Serial.println("Hello");
+  }
+  else 
+  {
+    digitalWrite(13,LOW);
+    Serial.println("hath dikha");
+  }
+  // put your main code here, to run repeatedly:
+delay(400);
+}
